@@ -1,0 +1,28 @@
+value = 255
+
+
+def setup():
+   size(400,400)
+   background(255)
+    
+def draw():
+    line(125, 50, 125, 350)
+    line(280, 50, 280, 350) 
+    line(370, 130, 30, 130)  
+    line(370, 260, 30, 260)  
+    
+    fill(value)
+    rect(50, 60, 50, 50)
+    
+    rect(50, 180, 50, 50)
+    
+    
+
+def mouseClicked(): 
+    global value
+    if value == 255:
+        value = 0
+    elif value == 0:
+        value = 67
+    else:
+        value = 255
