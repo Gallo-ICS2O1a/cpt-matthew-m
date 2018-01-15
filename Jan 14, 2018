@@ -1,0 +1,20 @@
+def setup():
+    size(400, 400)
+    background(255)
+
+
+def draw():
+    line(125, 50, 125, 350)
+    line(280, 50, 280, 350)
+    line(370, 130, 30, 130)
+    line(370, 260, 30, 260)
+
+
+def mousePressed():
+
+    if mouseButton == LEFT:
+        b = True
+        ellipse(pmouseX, pmouseY, 50, 50)
+    elif mouseButton == RIGHT:
+        b = False
+        rect(pmouseX, pmouseY, 55, 55)
